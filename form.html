@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       /* *{
+            margin:0px;
+            padding:0px;
+
+        }*/
+        .name{
+            padding:5px 10px;
+            margin:5px;
+        }
+        #birthday{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        Name:<br><input type="text" class="name"name="t1" placeholder="enter your name" size="25" required><br>
+        Password:<br><input type="password" class="name"name="t2" placeholder="enter your password" pattern="[a-zA-Z]{0-9}" maxlength="6" required><br>
+        Email:<br><input type="email" name="t3" class="name" placeholder="enter your emai addresss" required><br>
+        Date of Birth:<br><input type="date" id="birthday"><br>
+        Contact No:<br>
+        <input type="tel" name="t6" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        Gender:<br>
+        <input type="radio" name="t4"/>Male
+        <input type="radio" name="t4"/>Female<br>
+        Hobbies:<br>
+        <input type="checkbox" name="t5">Playing Games<br>
+        <input type="checkbox" name="t5">Singing<br>
+        <input type="checkbox" name="t5">Drawing<br>
+        Colege Name:<br>
+        <select id="college">
+            <option value="JNTUA">JNTUA</option>
+            <option value="PV Siddhartha">PV Siddhartha</option>
+            <option value="GITAMS">GITAMS</option>
+
+        </select>
+        <BR>
+         Address:<br><textarea cols="10" rows="5"></textarea><br>
+         Add Resume:<br>
+         <input type="file" value="choose file"><br>
+         <input style="background-color: green;margin:5px;"type="submit" value="submit">
+         <input style="background-color: red;"type="reset" value="resett">
+    </form>
+</body>
+</html>
